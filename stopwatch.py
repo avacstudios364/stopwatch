@@ -49,6 +49,7 @@ def submit():
         if temp == 0:
             tkinter.messagebox.showinfo('Finished','The timer is finished')
         temp -= 1
+        settimerbtn.config(state='disabled')
 
 settimerbtn = Button(root, text = 'Start countdown', font = systemfont, border = 5, command = submit)
 settimerbtn.place(x = 50, y = 100)
